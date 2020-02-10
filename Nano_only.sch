@@ -508,7 +508,7 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 </class>
 </classes>
 <parts>
-<part name="3.3V--GND" library="johannes" deviceset="CONRAD567588-2" device=""/>
+<part name="5V--GND" library="johannes" deviceset="CONRAD567588-2" device=""/>
 <part name="TPIN--PPIN" library="johannes" deviceset="CONRAD567588-2" device=""/>
 <part name="ARDUINO_NANO1" library="ArduinoNanoV30" deviceset="ARDUINO_NANO" device=""/>
 </parts>
@@ -517,7 +517,7 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <plain>
 </plain>
 <instances>
-<instance part="3.3V--GND" gate="G$1" x="-15.24" y="38.1" smashed="yes" rot="R270">
+<instance part="5V--GND" gate="G$1" x="-15.24" y="38.1" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-20.32" y="30.48" size="1.27" layer="94"/>
 <attribute name="NAME" x="-20.32" y="43.18" size="1.27" layer="94"/>
 </instance>
@@ -553,7 +553,7 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="3.3V--GND" gate="G$1" pin="P2"/>
+<pinref part="5V--GND" gate="G$1" pin="P2"/>
 <wire x1="-10.16" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="GND@1"/>
 <wire x1="55.88" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
@@ -562,9 +562,9 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <wire x1="10.16" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="5V" class="0">
 <segment>
-<pinref part="3.3V--GND" gate="G$1" pin="P1"/>
+<pinref part="5V--GND" gate="G$1" pin="P1"/>
 <wire x1="-10.16" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
 <wire x1="2.54" y1="40.64" x2="2.54" y2="58.42" width="0.1524" layer="91"/>

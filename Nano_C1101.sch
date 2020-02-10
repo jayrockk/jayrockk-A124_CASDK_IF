@@ -723,7 +723,7 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 </class>
 </classes>
 <parts>
-<part name="3.3V--GND" library="johannes" deviceset="CONRAD567588-2" device=""/>
+<part name="5V--GND" library="johannes" deviceset="CONRAD567588-2" device=""/>
 <part name="TPIN--PPIN" library="johannes" deviceset="CONRAD567588-2" device=""/>
 <part name="R--GND" library="johannes" deviceset="CONRAD567588-2" device=""/>
 <part name="G--B" library="johannes" deviceset="CONRAD567588-2" device=""/>
@@ -740,7 +740,7 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <text x="46.736" y="13.208" size="1.778" layer="91" rot="R90">SDA</text>
 </plain>
 <instances>
-<instance part="3.3V--GND" gate="G$1" x="-15.24" y="38.1" smashed="yes" rot="R270">
+<instance part="5V--GND" gate="G$1" x="-15.24" y="38.1" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-20.32" y="30.48" size="1.27" layer="94"/>
 <attribute name="NAME" x="-20.32" y="43.18" size="1.27" layer="94"/>
 </instance>
@@ -800,7 +800,7 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <wire x1="-5.08" y1="91.44" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
 <junction x="12.7" y="53.34"/>
-<pinref part="3.3V--GND" gate="G$1" pin="P2"/>
+<pinref part="5V--GND" gate="G$1" pin="P2"/>
 <wire x1="-10.16" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
 <junction x="12.7" y="35.56"/>
 <pinref part="OLED" gate="A" pin="3"/>
@@ -846,13 +846,8 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="73.66" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="45.72" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="83.82" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="3.3V--GND" gate="G$1" pin="P1"/>
-<wire x1="-7.62" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="83.82" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="3V3"/>
 <wire x1="7.62" y1="83.82" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
-<junction x="7.62" y="83.82"/>
 </segment>
 </net>
 <net name="CSN" class="0">
@@ -939,11 +934,25 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <wire x1="10.16" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="OLED" gate="A" pin="4"/>
 <wire x1="38.1" y1="43.18" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="5V--GND" gate="G$1" pin="P1"/>
+<wire x1="-10.16" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="0" y1="40.64" x2="0" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="0" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<junction x="10.16" y="43.18"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,55.88,55.88,ARDUINO_NANO1,!RESET,,,,"/>
+<approved hash="204,1,55.88,58.42,ARDUINO_NANO1,GND,,,,"/>
+<approved hash="202,1,15.24,81.28,ARDUINO_NANO1,AREF,,,,"/>
+<approved hash="202,1,15.24,55.88,ARDUINO_NANO1,!RESET,,,,"/>
+<approved hash="204,1,15.24,50.8,ARDUINO_NANO1,VIN,,,,"/>
+<approved hash="113,1,35.56,71.3528,ARDUINO_NANO1,,,,,"/>
+<approved hash="113,1,43.4061,22.6229,OLED,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
