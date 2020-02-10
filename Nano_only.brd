@@ -109,6 +109,10 @@
 <wire x1="53.01" y1="0" x2="53.01" y2="20.31" width="0" layer="20"/>
 <wire x1="53.01" y1="20.31" x2="0" y2="20.31" width="0" layer="20"/>
 <wire x1="0" y1="20.31" x2="0" y2="0" width="0" layer="20"/>
+<text x="52.07" y="13.97" size="0.8128" layer="25" rot="R90">GND</text>
+<text x="52.07" y="11.43" size="0.8128" layer="25" rot="R90">3V3</text>
+<text x="52.07" y="8.89" size="0.8128" layer="25" rot="R90">P</text>
+<text x="52.07" y="6.35" size="0.8128" layer="25" rot="R90">T</text>
 </plain>
 <libraries>
 <library name="johannes">
