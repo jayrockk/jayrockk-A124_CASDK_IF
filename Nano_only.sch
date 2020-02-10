@@ -562,13 +562,13 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <wire x1="10.16" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3V3" class="0">
+<net name="N$1" class="0">
 <segment>
-<wire x1="-7.62" y1="83.82" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="3.3V--GND" gate="G$1" pin="P1"/>
-<wire x1="-7.62" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="83.82" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="3V3"/>
+<wire x1="-10.16" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
+<wire x1="2.54" y1="40.64" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
